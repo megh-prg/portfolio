@@ -279,6 +279,7 @@
     <a class="brand" href="#top"><span class="dot"></span>Megha Kumari</a>
     <nav class="nav-links">
       <a class="hide-sm" href="#work">Work</a>
+              <a class="hide-sm" href="#opensource">Open source</a>
       <a class="hide-sm" href="#skills">Skills</a>
       <a class="hide-sm" href="#experience">Experience</a>
       <a href="#contact">Contact</a>
@@ -414,10 +415,31 @@
     </div>
   </section>
 
+  <!-- OPEN SOURCE -->
+  <section id="opensource">
+    <div class="wrap">
+      <div class="sec-head" data-reveal><span class="eyebrow">03 — Open source</span><h2>Contributions to open source</h2><p>Bug fixes contributed to <a href="https://github.com/StingraySoftware/stingray" target="_blank" rel="noopener">Stingray</a>, an actively maintained scientific-Python library for astronomical time-series analysis — approved by a core maintainer.</p></div>
+      <div style="display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+        <article class="card" data-reveal>
+          <div class="top"><span class="kicker">StingraySoftware/stingray</span></div>
+          <h3>Keep <code>tstart</code> a scalar in <code>apply_gtis()</code></h3>
+          <p class="desc">A light curve's start time was being set to a per-bin array instead of a single value, which broke <code>join()</code>. Fixed it to use the first bin's start time, with a regression test.</p>
+          <div class="links"><a class="plink" href="https://github.com/StingraySoftware/stingray/pull/1016" target="_blank" rel="noopener">View PR #1016</a></div>
+        </article>
+        <article class="card" data-reveal>
+          <div class="top"><span class="kicker">StingraySoftware/stingray</span></div>
+          <h3>Stop <code>GtiCorrPowerspectrum</code> mutating its input</h3>
+          <p class="desc">The class silently modified the caller's light curve in place. Fixed it to work on a copy so the input is never changed, with a regression test.</p>
+          <div class="links"><a class="plink" href="https://github.com/StingraySoftware/stingray/pull/1017" target="_blank" rel="noopener">View PR #1017</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- SKILLS -->
   <section id="skills">
     <div class="wrap">
-      <div class="sec-head" data-reveal><span class="eyebrow">03 — Toolkit</span><h2>What I work with</h2></div>
+      <div class="sec-head" data-reveal><span class="eyebrow">04 — Toolkit</span><h2>What I work with</h2></div>
       <div class="skill-grid">
         <div class="skill-col" data-reveal><h3>Languages</h3><div class="chips"><span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">SQL</span></div></div>
         <div class="skill-col" data-reveal><h3>Backend</h3><div class="chips"><span class="chip">FastAPI</span><span class="chip">Django</span><span class="chip">REST APIs</span><span class="chip">Pydantic</span><span class="chip">SQLAlchemy</span><span class="chip">Motor</span></div></div>
@@ -432,7 +454,7 @@
   <!-- EXPERIENCE -->
   <section id="experience">
     <div class="wrap">
-      <div class="sec-head" data-reveal><span class="eyebrow">04 — Experience</span><h2>Where I've worked</h2></div>
+      <div class="sec-head" data-reveal><span class="eyebrow">05 — Experience</span><h2>Where I've worked</h2></div>
       <div class="xp">
         <div class="xp-item" data-reveal>
           <div class="xp-when">Mar 2026 — Present<span class="now">Current</span></div>
@@ -473,7 +495,7 @@
   <!-- CONTACT -->
   <section id="contact" class="contact">
     <div class="wrap">
-      <span class="eyebrow">05 — Contact</span>
+      <span class="eyebrow">06 — Contact</span>
       <h2 data-reveal>Let's build something reliable</h2>
       <p>I'm open to backend and AI engineering roles. The fastest way to reach me is email — happy to share more detail, code, or walk through any project.</p>
       <div class="contact-card" data-reveal>
